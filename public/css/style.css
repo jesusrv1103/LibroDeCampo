@@ -1,5 +1,5 @@
 body{
-  background: url('../LibroCampo.png');
+  background: url('../pictures/LibroCampo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -7,4 +7,22 @@ body{
 
 .table{
   background-color: #ffffff;
+}
+
+.datos_indetificacion{
+  color: #28A745;
+}
+
+#maceta{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.pictures_form{
+  z-index: 500;
+  position: relative;
+  top: 45px;
+  left: 20px;
+  border-radius: 5px;
 }

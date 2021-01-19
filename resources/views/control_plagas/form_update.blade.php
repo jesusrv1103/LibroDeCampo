@@ -23,6 +23,7 @@
         </div>
       @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/ControlPlagas.png') }}"/>
       <div class="card">
         <form action="{{ route('control_plagas_update', $control_plaga->id)}}"
           method="POST">

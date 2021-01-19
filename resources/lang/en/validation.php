@@ -612,6 +612,62 @@ return [
         'cubierta_vegetal' => [
           'required' => 'La cuberta vegetal es requerida',
         ],
+
+        //Datos de inddentificación
+        'campana' => [
+          'required' => 'La campaña es requerida',
+          'string' => 'La campaña tiene que ser un texto',
+          'min' => 'La campaña es muy corta',
+          'max' => 'La campaña es demasiado larga'
+        ],
+
+        'titular_explotacion' => [
+          'required' => 'El titular de explotación es requerido',
+          'string' => 'El titular de explotación tiene que ser un texto',
+          'min' => 'El titular de explotación es muy corto',
+          'max' => 'El titular de explotación es demasiado largo'
+        ],
+
+        'direccion' => [
+          'required' => 'La dirección es requerida',
+          'string' => 'La dirección tiene que ser un texto',
+          'min' => 'La dirección es muy corta',
+          'max' => 'La dirección es demasiado larga'
+        ],
+
+        'telefono' => [
+          'required' => 'El telefono es requerido',
+          'string' => 'El telefono tiene que ser un numero',
+          'min' => 'El telefono tiene es muy corto',
+          'max' => 'El telefono tiene es demasiado largo'
+        ],
+
+        'fax' => [
+          'string' => 'El fax tiene que ser un numero',
+          'min' => 'El fax tiene es muy corto',
+          'max' => 'El fax tiene es demasiado largo'
+        ],
+
+        'codigo_postal' => [
+          'required' => 'El codigo postal es requerido',
+          'string' => 'El codigo postal tiene que ser un numero',
+          'min' => 'El codigo postal es muy corto',
+          'max' => 'El codigo postal es demasiado largo'
+        ],
+
+        'tecnico_resp_exp' => [
+          'required' => 'El tecnico responsable de explotación es requerido',
+          'numeric' => 'El tecnico responsable de explotación tiene que ser un numero',
+          'min' => 'El tecnico responsable de explotación es muy corto',
+          'max' => 'El tecnico responsable de explotación es demasiado largo'
+        ],
+
+        'firma_digital' => [
+          'required' => 'La firma digital es requerida',
+          'numeric' => 'La firma digital tiene que ser un numero',
+          'min' => 'La firma digital es muy corta',
+          'max' => 'La firma digital es demasiado largo'
+        ],
   ],
 
     /*

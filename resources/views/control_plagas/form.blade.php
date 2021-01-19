@@ -15,7 +15,7 @@
           </ul>
         </div>
       @endif
-      
+
       <!-- Mensaje de guardado -->
       @if(session('control_plagas_save'))
         <div class="alert alert-success">
@@ -23,6 +23,7 @@
         </div>
       @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/ControlPlagas.png') }}"/>
       <div class="card">
         <form action="{{ url('/control_plagas_save')}}" method="POST">
           @csrf

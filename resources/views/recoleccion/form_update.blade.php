@@ -15,7 +15,7 @@
           </ul>
         </div>
       @endif
-      
+
       <!-- Mensaje de guardado -->
       @if(session('recoleccion_update'))
         <div class="alert alert-success">
@@ -23,6 +23,7 @@
         </div>
       @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/Recoleccion.png') }}"/>
       <div class="card">
         <form action="{{ route('recoleccion_update', $recoleccion->id)}}" method="POST">
           @csrf @method('PATCH')

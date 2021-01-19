@@ -4,7 +4,6 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-7 mt-3">
-
       <!-- Validación de errores -->
       @if($errors->any())
         <div class="alert alert-danger">
@@ -23,6 +22,7 @@
           </div>
         @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/Maquina.png') }}"/>
       <div class="card">
         <form action="{{ url('/maquinaria_save')}}" method="POST">
           @csrf

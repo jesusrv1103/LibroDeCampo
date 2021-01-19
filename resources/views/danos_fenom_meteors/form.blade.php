@@ -22,6 +22,7 @@
         </div>
       @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/DanosFenomMeteor.png') }}"/>
       <div class="card">
         <form action="{{ url('/danos_fenom_meteors_save')}}" method="POST">
           @csrf

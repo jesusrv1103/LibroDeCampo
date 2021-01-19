@@ -23,6 +23,7 @@
           </div>
         @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/Maquina.png') }}"/>
       <div class="card">
         <form action="{{ route('maquinaria_update', $maquina->id)}}" method="POST">
           @csrf @method('PATCH')

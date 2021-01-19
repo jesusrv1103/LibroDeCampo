@@ -23,6 +23,7 @@
           </div>
         @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/Parcela.png') }}"/>
       <div class="card">
         <form action="{{ url('/parcelas_save')}}" method="POST">
           @csrf

@@ -4,7 +4,7 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-7 mt-3">
-      
+
       <!-- Validación de errores -->
       @if($errors->any())
         <div class="alert alert-danger">
@@ -23,6 +23,7 @@
         </div>
       @endif
 
+      <img class="pictures_form" src="{{ asset('/pictures/AclareoRacimos.png') }}"/>
       <div class="card">
         <form action="{{ route('aclareo_racimos_update', $aclareo_racimo->id)}}"
           method="POST">

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Identificacion extends Model
 {
-    protected $table="identificaciones";
+    protected $table="identificacions";
 }

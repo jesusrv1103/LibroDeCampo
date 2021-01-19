@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Identificacion
+Route::get('/', 'IdentificacionControler@identificacion_list');
+Route::get('/identificacion', 'IdentificacionControler@identificacion_form_update')->name('identificacion_form_update');
+Route::patch('/identificacion_update/{id}', 'IdentificacionControler@identificacion_update')->name('identificacion_update');
 
 //Maquinaria
 Route::get('/maquinaria', 'MaquinariaControler@maquinaria_list');

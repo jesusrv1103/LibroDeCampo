@@ -1,6 +1,7 @@
 --
 -- Table structure for table `municipios`
 USE CuadernoCampo
+
 /*
 DROP TABLE IF EXISTS `municipios`;
 
@@ -2109,8 +2110,7 @@ INSERT INTO `municipios` (`id`, `nombre`) VALUES
 (2092, 'Villa Aldama'),
 (2093, 'Tlacolulan'),
 (2094, 'Tonayán'),
-(2095, 'Coacoatzintla');
-INSERT INTO `contactos_kober_municipios` (`id`, `municipio`) VALUES
+(2095, 'Coacoatzintla'),
 (2096, 'Jilotepec'),
 (2097, 'Naolinco'),
 (2098, 'Miahuatlán'),
@@ -2473,3 +2473,8 @@ INSERT INTO `contactos_kober_municipios` (`id`, `municipio`) VALUES
 (2455, 'Apozol'),
 (2456, 'Juchipila'),
 (2457, 'Moyahua de Estrada');
+
+INSERT INTO `identificacions` (`id`, `campana`, `titular_explotacion`,
+    `direccion`, `telefono`, `municipio_id`, `fax`, `codigo_postal`,
+    `tecnico_resp_exp`, `firma_digital`)
+    values (NULL, '', '', '', '', 1, '', '', '', '');
